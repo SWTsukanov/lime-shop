@@ -23,7 +23,6 @@ const StyledListItem = styled.li`
   align-items: center;
   column-gap: 10px;
   font-family: 'Montserrat', sans-serif;
-  font-style: normal;
   font-size: ${(props) => {
     switch (props.size) {
       case 'big':
@@ -44,6 +43,7 @@ const StyledIcon = styled.div`
   width: 15px;
   height: 15px;
   background: url(${(props) => (props.url)}) center no-repeat;
+  background-size: contain;
   display: flex;
   justify-content: center;
   align-items: center;
