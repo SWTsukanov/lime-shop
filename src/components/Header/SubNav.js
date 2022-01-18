@@ -28,13 +28,13 @@ const StyledNav = styled.nav`
 function SubNav() {
   return (
     <StyledSubNav>
-      <Button text='Каталог' icon={'./icons/search-with-lines.svg'} />
+      <Button text='Каталог' icon={'/icons/search-with-lines.svg'} />
       <SearchBar />
       <ButtonDrop text='Скидки' icon='%' />
       <StyledNav>
-          <ButtonTab text='Кабинет' icon={'./icons/user.svg'} />
-          <ButtonTab text='Избранное' icon={'./icons/heart.svg'} />
-          <ButtonTab text='Корзина' icon={'./icons/shopping-cart.svg'} />
+          <ButtonTab text='Кабинет' icon={'/icons/user.svg'} />
+          <ButtonTab text='Избранное' icon={'/icons/heart.svg'} />
+          <ButtonTab text='Корзина' icon={'/icons/shopping-cart.svg'} />
       </StyledNav>
     </StyledSubNav>
   )

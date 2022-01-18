@@ -17,7 +17,7 @@ const StyledSearchBar = styled.input`
   font-weight: normal;
   font-size: 14px;
   cursor: text;
-  background-image: url('./icons/search.svg');
+  background-image: url('/icons/search.svg');
   background-repeat: no-repeat;
   background-position: center right 15px;
   -webkit-appearance: none;

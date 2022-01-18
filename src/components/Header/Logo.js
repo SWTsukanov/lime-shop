@@ -20,7 +20,7 @@ const StyledLogo = styled.div`
 const StyledLogoIcon = styled.div`
   width: 100%;
   height: 100%;
-  background: url("./icons/logo.svg") 70% 70% no-repeat;
+  background: url("/icons/logo.svg") 70% 70% no-repeat;
 `
 
 function Logo() {

@@ -32,7 +32,7 @@ const StyledIcon = styled.div`
 const DropIcon = styled.div`
   width: 18px;
   height: 15px;
-  background: url('./icons/drop-arrow.svg') center no-repeat;
+  background: url('/icons/drop-arrow.svg') center no-repeat;
   cursor: pointer;
 `
 

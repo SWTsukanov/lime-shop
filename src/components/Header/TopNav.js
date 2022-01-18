@@ -60,15 +60,15 @@ function TopNav() {
         <nav>
           <StyledList smallGap>
             <StyledListItem bold size='big'>
-              <StyledIcon url={'./icons/call.svg'}/>
+              <StyledIcon url={'/icons/call.svg'}/>
               7756
             </StyledListItem>
             <StyledListItem bold>
-              <StyledIcon url={'./icons/geo.svg'}/>
+              <StyledIcon url={'/icons/geo.svg'}/>
               Зона доставки
             </StyledListItem>
             <StyledListItem bold>
-              <StyledIcon url={'./icons/clock.svg'}/>
+              <StyledIcon url={'/icons/clock.svg'}/>
               17:45 - 20:45
             </StyledListItem>
           </StyledList>
