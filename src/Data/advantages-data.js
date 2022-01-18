@@ -1,4 +1,4 @@
-export const advantages = [
+export const advantagesData = [
   {
     "title": "Качество продуктов",
     "description": "Выбирайте из 40 000 товаров: у нас есть фрукты и овощи, мясо и рыба, все для дома и товары для животных",

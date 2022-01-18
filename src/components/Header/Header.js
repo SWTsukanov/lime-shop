@@ -7,6 +7,8 @@ import Logo from './Logo';
 const StyledHeader = styled.header`
   width: 100%;
   height: 120px;
+  position: relative;
+  z-index: 5;
 `
 
 function Header() {
