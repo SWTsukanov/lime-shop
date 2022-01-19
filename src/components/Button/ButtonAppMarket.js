@@ -1,7 +1,7 @@
 import React from 'react'
 import styled from 'styled-components'
 
-const StyledButtonAppStore = styled.button`
+const StyledButtonAppMarket = styled.button`
   height: 45px;
   width: 245px;
   background: none;
@@ -32,14 +32,14 @@ const StyledIcon = styled.div`
   cursor: pointer;
 `
 
-function ButtonAppStore(props) {
+function ButtonAppMarket(props) {
   const { text, icon } = props
   return (
-    <StyledButtonAppStore>
+    <StyledButtonAppMarket>
       <StyledIcon url={icon} />
       {text}
-    </StyledButtonAppStore>
+    </StyledButtonAppMarket>
   )
 }
 
-export default ButtonAppStore
+export default ButtonAppMarket

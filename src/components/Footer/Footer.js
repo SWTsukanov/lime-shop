@@ -1,7 +1,7 @@
 import React from 'react'
 import styled from 'styled-components'
 import LogoDark from './LogoDark';
-import ButtonAppStore from '../Button/ButtonAppStore';
+import ButtonAppMarket from '../Button/ButtonAppMarket';
 
 const StyledFooter = styled.footer`
   width: 100%;
@@ -151,8 +151,8 @@ function Footer() {
           <StyledNumberIcon />
           7756
         </StyledPhoneNumber>
-        <ButtonAppStore text='Скачать в AppStore' icon={'/icons/apple-store.svg'} />
-        <ButtonAppStore text='Скачать в Play Market' icon={'/icons/android-store.svg'} />
+        <ButtonAppMarket text='Скачать в AppStore' icon={'/icons/apple-store.svg'} />
+        <ButtonAppMarket text='Скачать в Play Market' icon={'/icons/android-store.svg'} />
       </Contacts>
     </StyledFooter>
   )
