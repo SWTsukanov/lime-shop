@@ -1,10 +1,10 @@
 import React from 'react'
 import styled from 'styled-components'
 import Advantages from '../../components/Advantages/Advantages';
+import NewsBlock from '../../components/NewsBlock/NewsBlock';
 
 const StyledHomeSection = styled.div`
   width: 100%;
-  height: 500px;
   background-color: #ffffff;
   padding: 20px 30px;
 `
@@ -16,9 +16,7 @@ function HomeSection() {
         Main slider
       </div>
       <Advantages />
-      <div>
-        News
-      </div>
+      <NewsBlock />
       <div>
         Discounts
       </div>
