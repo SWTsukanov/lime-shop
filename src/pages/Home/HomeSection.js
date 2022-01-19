@@ -2,11 +2,12 @@ import React from 'react'
 import styled from 'styled-components'
 import Advantages from '../../components/Advantages/Advantages';
 import NewsBlock from '../../components/NewsBlock/NewsBlock';
+import Survey from '../../components/Survey/Survey';
 
 const StyledHomeSection = styled.div`
   width: 100%;
   background-color: #ffffff;
-  padding: 20px 30px;
+  padding: 20px 30px 50px 30px;
 `
 
 function HomeSection() {
@@ -35,9 +36,13 @@ function HomeSection() {
       <div>
         Info
       </div>
-      <div>
-        survey
-      </div>
+      <Survey
+        title="ПОМОГИТЕ НАМ СТАТЬ ЛУЧШЕ"
+        question="Удобно ли вам совершать покупки через наш Онлайн-Каталог?"
+        variantOne="Да, легко найти товары"
+        variantTwo="В магазине удобнее"
+        variantThree="Пользуюсь поиском на сайте"
+      />
     </StyledHomeSection>
   )
 }
