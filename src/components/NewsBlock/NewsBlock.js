@@ -12,7 +12,6 @@ const StyledNewsBlockHeader = styled.div`
 const StyledNewsTitle = styled.div`
   
   h2 {
-    font-family: Montserrat;
     font-weight: bold;
     font-size: 18px;
     color: #333333;
@@ -30,7 +29,6 @@ const StyledNewsTitle = styled.div`
 const StyledNewsLink = styled.a`
   text-decoration: none;
   position: relative;
-  font-family: Montserrat;
   font-size: 14px;
   color: #333333;
   margin-right: 50px;

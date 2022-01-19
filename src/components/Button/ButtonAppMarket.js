@@ -12,7 +12,6 @@ const StyledButtonAppMarket = styled.button`
   align-items: center;
   column-gap: 20px;
   color: #ffffff;
-  font-family: Montserrat;
   font-weight: 500;
   font-size: 14px;
   cursor: pointer;

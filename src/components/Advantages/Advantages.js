@@ -15,7 +15,6 @@ const StyledAdvantageItem = styled.div`
 `
 
 const StyledAdvantageTitle = styled.h4`
-  font-family: Montserrat;
   font-weight: bold;
   font-size: 14px;
   color: #333333;
@@ -36,7 +35,6 @@ const StyledAdvantageTitle = styled.h4`
 `
 
 const StyledAdvantageDescription = styled.p`
-  font-family: Montserrat;
   font-size: 12px;
   color: #333333;
   position: relative;
@@ -59,7 +57,7 @@ function Advantages() {
   return (
     <StyledAdvantages>
       {advantagesData.map((adv) => (
-        <StyledAdvantageItem>
+        <StyledAdvantageItem key={adv.advantageId}>
           <StyledAdvantageTitle icon={adv.icon}>{adv.title}</StyledAdvantageTitle>
           <StyledAdvantageDescription>{adv.description}</StyledAdvantageDescription>
         </StyledAdvantageItem>

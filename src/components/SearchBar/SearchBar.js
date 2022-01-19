@@ -12,7 +12,6 @@ const StyledSearchBar = styled.input`
   margin: 0 15px;
   align-items: center;
   color: #333333;
-  font-family: Montserrat;
   font-style: normal;
   font-weight: normal;
   font-size: 14px;

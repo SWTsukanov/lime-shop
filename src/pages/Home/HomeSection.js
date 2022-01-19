@@ -3,6 +3,7 @@ import styled from 'styled-components'
 import Advantages from '../../components/Advantages/Advantages';
 import NewsBlock from '../../components/NewsBlock/NewsBlock';
 import Survey from '../../components/Survey/Survey';
+import MainCarousel from '../../components/Carousel/MainCarousel';
 
 const StyledHomeSection = styled.div`
   width: 100%;
@@ -13,9 +14,7 @@ const StyledHomeSection = styled.div`
 function HomeSection() {
   return (
     <StyledHomeSection>
-      <div>
-        Main slider
-      </div>
+      <MainCarousel />
       <Advantages />
       <NewsBlock />
       <div>

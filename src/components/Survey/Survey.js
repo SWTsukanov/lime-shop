@@ -12,7 +12,6 @@ const StyledSurvey = styled.div`
 `
 
 const StyledSurveyTitle = styled.h2`
-  font-family: Montserrat;
   font-weight: bold;
   font-size: 24px;
   color: #333333;
@@ -24,7 +23,6 @@ const StyledButton = styled.button`
   padding: 20px 20px;
   border-radius: 5px;
   background: #ffffff;
-  font-family: Montserrat;
   font-weight: bold;
   font-size: 12px;
   color: #333333;
@@ -52,7 +50,6 @@ const StyledButton = styled.button`
 
 const StyledQuestion = styled.div`
   h4 {
-    font-family: Montserrat;
     font-size: 14px;
     line-height: 17px;
     color: #333333;

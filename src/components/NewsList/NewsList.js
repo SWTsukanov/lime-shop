@@ -20,7 +20,6 @@ const StyledNewsImage = styled.div`
 `
 
 const StyledNewsTitle = styled.h4`
-  font-family: Montserrat;
   font-weight: bold;
   font-size: 14px;
   color: #333333;
@@ -29,7 +28,6 @@ const StyledNewsTitle = styled.h4`
 
 const StyledNewsItemLink = styled.p`
   text-decoration: underline;
-  font-family: Montserrat;
   font-size: 12px;
   color: #333333;
   opacity: 0.5;
@@ -61,7 +59,6 @@ const StyledNewsItem = styled.div`
 `
 
 const StyledNewsArticle = styled.p`
-  font-family: Montserrat;
   font-size: 12px;
   color: #333333;
   opacity: 0.7;
@@ -80,11 +77,10 @@ const StyledOpacityGradient = styled.a`
 
 function NewsList(props) {
   const { numberOfItems } = props
-  console.log(numberOfItems)
   return (
     <StyledNewsList>
       {newsData.slice(0, numberOfItems).map((el) => (
-        <StyledNewsItem>
+        <StyledNewsItem key={el.newsId}>
           <StyledNewsImage image={el.images[0].url} />
           <StyledNewsTitle>{el.title}</StyledNewsTitle>
           <StyledNewsArticle>{el.article.substr(1, 230)}</StyledNewsArticle>

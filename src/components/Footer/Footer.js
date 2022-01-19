@@ -14,7 +14,6 @@ const StyledFooter = styled.footer`
 
 const StyledInfo = styled.div`
   width: 260px;
-  font-family: Montserrat;
   font-weight: 500;
   font-size: 12px;
   color: #FFFFFF;
@@ -32,7 +31,6 @@ const StyledFooterNav = styled.div`
 `
 
 const StyledNavTitle = styled.h3`
-  font-family: Montserrat;
   font-weight: bold;
   font-size: 18px;
   line-height: 22px;
@@ -45,7 +43,6 @@ const StyledNavList = styled.ul`
   list-style: none;
   
   li {
-    font-family: Montserrat;
     font-weight: 500;
     font-size: 14px;
     line-height: 32px;
@@ -63,7 +60,6 @@ const Contacts = styled.div`
 `
 
 const StyledContactsTitle = styled.h4`
-  font-family: Montserrat;
   font-weight: 500;
   font-size: 14px;
   color: #ffffff;
@@ -75,7 +71,6 @@ const StyledPhoneNumber = styled.a`
   justify-content: flex-start;
   align-items: center;
   column-gap: 18px;
-  font-family: Montserrat;
   font-weight: bold;
   font-size: 42px;
   color: #ffffff;

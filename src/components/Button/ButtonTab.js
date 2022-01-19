@@ -13,7 +13,6 @@ const StyledButton = styled.button`
   align-items: center;
   column-gap: 10px;
   color: #333333;
-  font-family: Montserrat;
   font-weight: bold;
   font-size: 14px;
   cursor: pointer;
