@@ -7,6 +7,7 @@ import MainCarousel from '../../components/Carousel/MainCarousel';
 
 const StyledHomeSection = styled.div`
   width: 100%;
+  max-width: 1110px;
   background-color: #ffffff;
   padding: 20px 30px 50px 30px;
 `

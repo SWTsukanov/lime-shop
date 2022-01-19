@@ -4,7 +4,8 @@ import SideShoppingCart from '../../components/ShoppingCart/SideShoppingCart';
 import HomeSection from './HomeSection';
 
 const StyledHome = styled.main`
-display: flex;
+  display: flex;
+  justify-content: center;
 `
 
 function Home() {
