@@ -6,7 +6,7 @@ const StyledAdvantages = styled.div`
   display: flex;
   justify-content: space-evenly;
   column-gap: 75px;
-  margin-bottom: 30px;
+  margin-bottom: 45px;
 `
 
 const StyledAdvantageItem = styled.div`
