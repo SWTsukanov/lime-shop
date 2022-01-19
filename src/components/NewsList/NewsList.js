@@ -10,13 +10,6 @@ const StyledNewsList = styled.div`
   margin-top: 20px;
 `
 
-const StyledNewsItem = styled.div`
-  width: 250px;
-  height: 350px;
-  overflow-y: hidden;
-  position: relative;
-`
-
 const StyledNewsImage = styled.div`
   background: url(${(props) => (props.image)}) center no-repeat;
   background-size: cover;
@@ -32,6 +25,39 @@ const StyledNewsTitle = styled.h4`
   font-size: 14px;
   color: #333333;
   margin-bottom: 15px;
+`
+
+const StyledNewsItemLink = styled.p`
+  text-decoration: underline;
+  font-family: Montserrat;
+  font-size: 12px;
+  color: #333333;
+  opacity: 0.5;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+`
+
+const StyledNewsItem = styled.div`
+  width: 250px;
+  height: 350px;
+  overflow-y: hidden;
+  position: relative;
+  
+  &:hover {
+    
+    ${StyledNewsImage} {
+      box-shadow: 0px 10px 10px -5px rgba(0, 0, 0, 0.2);
+    }
+
+    ${StyledNewsTitle} {
+      color: #A1D214;
+    }
+
+    ${StyledNewsItemLink} {
+      opacity: 1;
+    }
+  }
 `
 
 const StyledNewsArticle = styled.p`
@@ -50,17 +76,6 @@ const StyledOpacityGradient = styled.a`
   height: 100%;
   background: linear-gradient(0deg, rgba(255, 255, 255, 0) 0%, #FFFFFF 8%, rgba(255, 255, 255, 0) 25%);
   cursor: pointer;
-`
-
-const StyledNewsItemLink = styled.p`
-  text-decoration: underline;
-  font-family: Montserrat;
-  font-size: 12px;
-  color: #333333;
-  opacity: 0.5;
-  position: absolute;
-  bottom: 0;
-  left: 0;
 `
 
 function NewsList(props) {
