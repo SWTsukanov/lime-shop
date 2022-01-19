@@ -5,21 +5,68 @@ import {mainCarouselData} from '../../Data/main-carousel-data';
 const StyledMainCarousel = styled.div`
   position: relative;
   margin-bottom: 50px;
+  height: 360px;
 `
 
 const StyledMainCarouselItem = styled.div`
   width: 855px;
-  height: 360px;  
+  height: 360px;
   ${(props) => {
       if (props.bgColor) {
-        return `background: url(${props.image}) right 10% bottom 10% no-repeat, ${props.bgColor};`
+        return `
+          background: url(${props.image}) right 0 bottom 0 no-repeat, ${props.bgColor};
+          background-size: contain;
+        `
       }
-      return `background-image: url(${props.image}) center no-repeat;`
+      return `
+        background: url(${props.image}) center no-repeat;
+        background-size: cover;
+      `
     }
-  }
-  background-size: contain;
+  }  
   border-radius: 10px;
   padding: 60px 20px 40px 50px;
+  position: absolute;
+  transition: .5s;
+  ${(props) => {
+      switch (props.order) {
+        case 1:
+          return `
+            top: 0;
+            left: 0;
+            opacity: 1;
+            z-index: 4;
+          `
+        case 2:
+          return `
+            top: 0;
+            left: 120px;
+            opacity: 1;
+            z-index: 3;
+            transform: scale(0.95);
+            transform-origin: right;
+          `
+        case 3:
+          return `
+            top: 0;
+            right: 0;
+            opacity: 1;
+            z-index: 2;
+            transform: scale(0.9);
+            transform-origin: right;
+          `
+        default:
+          return `
+            top: 0;
+            right: 0;
+            opacity: 0;
+            z-index: 1;
+            transform: scale(0.9);
+            transform-origin: right;
+          `
+      }
+    }
+  }
 `
 
 const StyledMainCarouselTitle = styled.div`
@@ -49,12 +96,45 @@ const StyledMainCarouselButton = styled.button`
   cursor: pointer;
 `
 
+const StyledControlButton = styled.button`
+  position: absolute;
+  border: none;
+  width: 27px;
+  height: 72px;
+  top: 50%;
+  background: #ffffff;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+  border-radius: 5px;
+  z-index: 5;
+  ${(props) => {
+    if (props.direction === 'left') {
+      return `        
+        left: 0;
+        transform: translate(-50%, -50%);        
+        &:before {
+          content: url('/icons/arrow-angle-left.svg');
+        }
+      `
+    }
+    if (props.direction === 'right') {
+      return `        
+        right: 0;
+        transform: translate(-182px, -50%);
+        &:before {
+          content: url('/icons/arrow-angle-right.svg');
+        }
+      `
+    }
+  }}
+  cursor: pointer;
+`
+
 function MainCarousel() {
   return (
     <StyledMainCarousel>
-      {mainCarouselData.map((el) => {
+      {mainCarouselData.map((el, ind) => {
         return (
-          <StyledMainCarouselItem key={el.mainCarouselItemId} image={el.image} bgColor={el.bgColor}>
+          <StyledMainCarouselItem key={el.mainCarouselItemId} image={el.image} bgColor={el.bgColor} order={ind+1}>
             <StyledMainCarouselTitle>
               {el.title}
             </StyledMainCarouselTitle>
@@ -67,6 +147,8 @@ function MainCarousel() {
           </StyledMainCarouselItem>
         )
       })}
+        <StyledControlButton direction={'left'} />
+        <StyledControlButton direction={'right'} />
     </StyledMainCarousel>
   )
 }
