@@ -93,6 +93,7 @@ function NewsList(props) {
       ))}
     </StyledNewsList>
   )
+
 }
 
 export default NewsList

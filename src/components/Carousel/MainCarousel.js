@@ -173,7 +173,7 @@ function MainCarousel() {
         <StyledControlButton direction={'left'} />
         <StyledControlButton direction={'right'} />
         <StyledControlDots>
-          {mainCarouselData.map((el) => <StyledControlDotItem />)}
+          {mainCarouselData.map((el, ind) => <StyledControlDotItem key={ind}/>)}
         </StyledControlDots>
     </StyledMainCarousel>
   )

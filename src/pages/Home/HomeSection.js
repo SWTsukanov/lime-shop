@@ -5,6 +5,7 @@ import NewsBlock from '../../components/NewsBlock/NewsBlock';
 import Survey from '../../components/Survey/Survey';
 import MainCarousel from '../../components/Carousel/MainCarousel';
 import Testimonials from '../../components/Testimonials/Testimonials';
+import ProductBlock from '../../components/ProductBlock/ProductBlock';
 
 const StyledHomeSection = styled.div`
   width: 100%;
@@ -19,22 +20,12 @@ function HomeSection() {
       <MainCarousel />
       <Advantages />
       <NewsBlock />
-      <div>
-        Discounts
-      </div>
-      <div>
-        New goods
-      </div>
+      <ProductBlock title="Акционные продукты" color="linear-gradient(90deg, #FFA800 0%, #FFC709 100%), #A1D214;" />
+      <ProductBlock title="Новинки" color="linear-gradient(90deg, #00D1FF 0%, #17BADE 0.01%, #14D28E 100%), #A1D214;" />
       <Testimonials numberOfItems={4} />
-      <div>
-        Vegan choise
-      </div>
-      <div>
-        Popular
-      </div>
-      <div>
-        Info
-      </div>
+      <ProductBlock title="Выбор вегана" color="linear-gradient(90deg, #76B852 0%, #8DC26F 100%), #A1D214;" />
+      <ProductBlock title="Популярное" color="linear-gradient(90deg, #FF5C00 0%, #FF9900 100%), #A1D214;" />
+      {/*  Info*/}
       <Survey
         title="ПОМОГИТЕ НАМ СТАТЬ ЛУЧШЕ"
         question="Удобно ли вам совершать покупки через наш Онлайн-Каталог?"
