@@ -14,6 +14,7 @@ const StyledSurvey = styled.div`
 const StyledSurveyTitle = styled.h2`
   font-weight: bold;
   font-size: 24px;
+  line-height: 36px;
   color: #333333;
   max-width: 155px;
   margin-right: 50px;
