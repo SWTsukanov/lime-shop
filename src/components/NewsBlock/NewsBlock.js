@@ -2,6 +2,10 @@ import React from 'react'
 import styled from 'styled-components'
 import NewsList from '../NewsList/NewsList';
 
+const StyledNewsBlock = styled.section`
+  margin-bottom: 32px;
+`
+
 const StyledNewsBlockHeader = styled.div`
   width: 100%;
   display: flex;
@@ -49,7 +53,7 @@ const StyledNewsLink = styled.a`
 function NewsBlock() {
 
   return (
-    <>
+    <StyledNewsBlock>
       <StyledNewsBlockHeader>
         <StyledNewsTitle>
           <h2>Новости Лайма</h2>
@@ -60,7 +64,7 @@ function NewsBlock() {
         </StyledNewsLink>
       </StyledNewsBlockHeader>
       <NewsList numberOfItems={4} />
-    </>
+    </StyledNewsBlock>
   )
 }
 

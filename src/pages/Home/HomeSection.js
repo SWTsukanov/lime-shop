@@ -4,6 +4,7 @@ import Advantages from '../../components/Advantages/Advantages';
 import NewsBlock from '../../components/NewsBlock/NewsBlock';
 import Survey from '../../components/Survey/Survey';
 import MainCarousel from '../../components/Carousel/MainCarousel';
+import Testimonials from '../../components/Testimonials/Testimonials';
 
 const StyledHomeSection = styled.div`
   width: 100%;
@@ -24,9 +25,7 @@ function HomeSection() {
       <div>
         New goods
       </div>
-      <div>
-        testimonials
-      </div>
+      <Testimonials numberOfItems={4} />
       <div>
         Vegan choise
       </div>

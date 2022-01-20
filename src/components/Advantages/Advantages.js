@@ -2,7 +2,7 @@ import React from 'react'
 import styled from 'styled-components'
 import {advantagesData} from '../../Data/advantages-data';
 
-const StyledAdvantages = styled.div`
+const StyledAdvantages = styled.section`
   display: flex;
   justify-content: space-evenly;
   column-gap: 75px;

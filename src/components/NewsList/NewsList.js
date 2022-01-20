@@ -86,7 +86,7 @@ function NewsList(props) {
         <StyledNewsItem key={el.newsId}>
           <StyledNewsImage image={el.images[0].url} />
           <StyledNewsTitle>{el.title}</StyledNewsTitle>
-          <StyledNewsArticle>{el.article.substr(1, 230)}</StyledNewsArticle>
+          <StyledNewsArticle>{el.article.substr(0, 230)}</StyledNewsArticle>
           <StyledNewsItemLink>Читать дальше</StyledNewsItemLink>
           <StyledOpacityGradient href="#"/>
         </StyledNewsItem>
