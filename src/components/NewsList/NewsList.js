@@ -17,6 +17,7 @@ const StyledNewsImage = styled.div`
   height: 160px;
   border-radius: 10px;
   margin-bottom: 25px;
+  transition: .2s;
 `
 
 const StyledNewsTitle = styled.h4`
@@ -24,6 +25,7 @@ const StyledNewsTitle = styled.h4`
   font-size: 14px;
   color: #333333;
   margin-bottom: 15px;
+  transition: .2s;
 `
 
 const StyledNewsItemLink = styled.p`
@@ -34,6 +36,7 @@ const StyledNewsItemLink = styled.p`
   position: absolute;
   bottom: 0;
   left: 0;
+  transition: .2s;
 `
 
 const StyledNewsItem = styled.div`

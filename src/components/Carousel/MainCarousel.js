@@ -129,6 +129,29 @@ const StyledControlButton = styled.button`
   cursor: pointer;
 `
 
+const StyledControlDots = styled.div`
+  position: absolute;
+  bottom: 20px;
+  right: 21%;
+  display: flex;
+  column-gap: 5px;
+  z-index: 5;
+`
+
+const StyledControlDotItem = styled.div`
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background-color: #ffffff;
+  cursor: pointer;
+  transition: .2s;
+  opacity: ${(props) => props.active ? 1 : 0.3};
+  
+  &:hover {
+    opacity: 1;
+  }
+`
+
 function MainCarousel() {
   return (
     <StyledMainCarousel>
@@ -149,6 +172,9 @@ function MainCarousel() {
       })}
         <StyledControlButton direction={'left'} />
         <StyledControlButton direction={'right'} />
+        <StyledControlDots>
+          {mainCarouselData.map((el) => <StyledControlDotItem />)}
+        </StyledControlDots>
     </StyledMainCarousel>
   )
 }
